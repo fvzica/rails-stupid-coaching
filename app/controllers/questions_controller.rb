@@ -7,6 +7,10 @@ class QuestionsController < ApplicationController
        puts "Ask something!!"
     end
   end
+
+  def home
+  end
+
   def answer
     @answer = params[:question]
     if @answer == "I am going to work"
