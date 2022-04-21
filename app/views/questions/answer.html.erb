@@ -1,2 +1,18 @@
-<%= @answer %>
+
+  <div class="card">
+    <div class="card-body" id ="question">
+      <%= params[:question].capitalize %>
+      <p> - You </p>
+     </div>
+  </div>
+
+
+  <div class="card"  id="answer" >
+    <div class="card-body">
+      <%= @answer %>
+      <p> - Your coach </p>
+    </div>
+  </div>
+
+
 <%= link_to "Ask a new question", ask_path %>
